@@ -9,20 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Artist Wagon - Bank</title>
+    <title>Artist Wagon</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,96 +31,101 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Artist Wagon Bank</a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    Artist Wagon
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Features</a>
+                        <a class="page-scroll" href="#features">Features</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Join The Beta</a>
+                        <a class="page-scroll" href="#joinTheBeta">Join The Beta</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.container -->
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-               
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="text-area col-md-12">
+                        <h1 class="brand-heading">Artist Wagon</h1>
+                        <p class="intro-text">An Alternative Banking Solution Designed For Musicians.</p>
+                        <a href="#about" class="btn btn-circle page-scroll hidden-xs">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
+    <!-- About Section -->
+    <section id="features" class="container text-center">
+        <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Features</h2>
-                    <h3 class="section-subheading text-muted">Artist Wagon is loaded with features for YOU the artist to help take the pain out of banking.</h3>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-4 feature">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-users fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Your Bands</h4>
-                    <p class="text-muted">Be apart of multiple bands and manage each of them seperately.</p>
+                    <h4 class="service-heading">Music Groups</h4>
+                    <p class="text-muted">Be apart of multiple music groups and manage each of them seperately.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 feature">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-cc-mastercard fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Debit Card</h4>
-                    <p class="text-muted">For each band you are apart of, you have the option of obtaining a debit card that works at thousands
+                    <p class="text-muted">For each musical group you are apart of, you will get a debit card that works at thousands
                         of ATM's across the country.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 feature">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-share fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Split Transactions</h4>
-                    <p class="text-muted">Split Profits and Debts among members in the band.</p>
+                    <p class="text-muted">Split Profits and Debts among members in each music group.</p>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-4 feature">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Request Money</h4>
-                    <p class="text-muted">Request money from the band before making a purchase.</p>
+                    <p class="text-muted">Request money from each music group before making a purchase.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 feature">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-minus fa-stack-1x fa-inverse"></i>
@@ -130,28 +133,27 @@
                     <h4 class="service-heading">Withdraw Money</h4>
                     <p class="text-muted">Connect an external Bank Account and transfer money back and forth free of charge.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 feature">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-money fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Create IOU's</h4>
-                    <p class="text-muted">Buy something for another member of the band. No worries! Genereate an IOU, set a deadline and wait
-                        for them to pay you back.</p>
+                    <p class="text-muted">Buy something for another member of your music group? No worries! Genereate an IOU, set a deadline and wait for them to pay you back.</p>
                 </div>
             </div>
-        </div>
     </section>
 
-    <section id="contact">
+    <!-- Download Section -->
+    <section id="joinTheBeta" class="content-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-12 text-center">
                     <h2 class="section-heading">Join The Beta</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <form action="https://docs.google.com/forms/d/1I5U3sbXkr2-EkA3wib8elJ7mLf6bpKKjoNWHJx-ImGs/formResponse" 
                         method="POST" target="_self" onsubmit="">
                         <input type="hidden" name="draftResponse" value="[,,&quot;-4053785039367572800&quot;]">
@@ -179,28 +181,19 @@
                          </div>
                          <div class="form-group">
                             <label class="text-white" for="entry_1151837875">How will this service help your band? (optional)</label>
-                            <textarea type="text" name="entry_688433166"  class="form-control input-lg" id="entry_688433166"></textarea>
+                            <textarea rows="10" type="text" name="entry_688433166"  class="form-control input-lg" id="entry_688433166"></textarea>
                          </div>
-                         <button id="ss-submit" class="btn btn-primary btn-lg" type="submit">Submit</button>
+                         <button id="ss-submit" class="btn btn-white btn-lg" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Artist Wagon 2015</span>
-                </div>
-                <div class="col-md-4">
-                    
-                </div>
-                <div class="col-md-4">
-        
-                </div>
-            </div>
+        <div class="container text-center">
+            <p>Copyright &copy; Artist Wagon 2015</p>
         </div>
     </footer>
 
@@ -211,16 +204,13 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
+    <script src="js/grayscale.js"></script>
 
 </body>
 
